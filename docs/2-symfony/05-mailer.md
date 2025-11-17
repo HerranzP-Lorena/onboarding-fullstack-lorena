@@ -14,6 +14,7 @@ Configurar el Mailer de Symfony para enviar correos transaccionales cuando se re
    - Durante el registro Mailtrap te pedirá un dominio de referencia; puedes escribir uno ficticio de tu proyecto como `todo-app.local` o `miempresa.test`, no necesita estar registrado.
    - En la pantalla principal, haz clic en el menú lateral **Sandboxes** y pulsa **Add Sandbox** (botón azul arriba a la derecha) para crear la bandeja de pruebas que necesitas, llama a tu sandbox como prefieras.
    - Dentro de la sandbox abre la pestaña **Integration**. Desplázate hasta la sección **Code Samples**, selecciona **PHP → Symfony 5+** y copia la línea que aparece, por ejemplo `MAILER_DSN="smtp://USUARIO:PASS@sandbox.smtp.mailtrap.io:2525"`.
+   (Nota Importante: Asegúrate de copiar clave entera, por defecto aparece censurada por asteriscos ****).
    - Copia el valor completo que te muestran (incluye usuario, contraseña, host y puerto) sin dejar espacios y pégalo en tu `.env`.
    - Vuelve a levantar `symfony serve` o limpia la caché (`php bin/console cache:clear`) para asegurarte de que la nueva variable se cargue.
 3. Ejecuta `php bin/console debug:config framework mailer` desde el contenedor del backend para verificar que Symfony lee la configuración correcta.
