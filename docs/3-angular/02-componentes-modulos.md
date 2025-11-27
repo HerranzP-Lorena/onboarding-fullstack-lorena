@@ -251,8 +251,6 @@ Nota: para hacer uso de routerlink hay que importar RouterModule en el archivo t
    b) Configura el componente en `back-to-landing-button.component.ts`:
 
    ```ts
-      b) Configura el componente en `back-to-landing-button-component.ts`:
-   ```ts
    // src/app/shared/components/back-to-landing-button/back-to-landing-button-component.ts
    import { Component } from '@angular/core';
    import { RouterLink } from '@angular/router';
